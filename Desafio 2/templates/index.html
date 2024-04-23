@@ -1,20 +1,37 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block title %} Home {% endblock %} {% block content
+%}
+<div style="display: flex; justify-content: center">
+  <img
+    src="{{url_for('static', filename='/images/capa.png')}}"
+    alt="capa"
+    style="max-width: 100%; height: auto"
+  />
+</div>
+<div
+  background="{{url_for('static', filename='/images/fundo.png')}}"
+  class="container-m"
+>
+  <div>
+    <h2>Sobre a Universidade</h2>
 
-{% block title %} Home {% endblock %}
-
-{% block content %}
-    <div style="display: flex; justify-content: center;">
-        <img src="{{url_for('static', filename='/images/capa.png')}}" alt="capa" style="max-width: 100%; height: auto;">
-    </div>
-    <div background="{{url_for('static', filename='/images/fundo.png')}}" class="container-m">
-    
-        <div>
-            <h2> Sobre a Universidade</h2>
-
-            <p>Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit. Reprehenderit, obcaecati, dolorum, odit aperiam ipsum similique perferendis dolore quam molestiae quos ea? Labore quibusdam, ab nemo rem reiciendis voluptas deleniti sit.</p>
-            <p>Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit. Reiciendis odit commodi eos iste facere at molestias, deleniti illo accusamus neque fugiat! Quos ipsa omnis accusamus sequi laboriosam iusto quae minus?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam et labore totam recusandae quidem, non temporibus commodi sapiente. Ut, eaque doloribus! Libero atque modi quo quibusdam suscipit ipsa id nostrum.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed accusantium quisquam ullam reiciendis veniam laboriosam dicta delectus? Neque tempore illo, quae architecto eum illum ipsam rerum dolorum, laudantium, corporis sequi.</p>
-        </div>
-    </div>    
+    <p>
+      Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit.
+      Reprehenderit, obcaecati, dolorum, odit aperiam ipsum similique
+      perferendis dolore quam molestiae quos ea? Labore quibusdam, ab nemo rem
+      reiciendis voluptas deleniti sit.
+    </p>
+    <p>
+      Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit.
+      Reiciendis odit commodi eos iste facere at molestias, deleniti illo
+      accusamus neque fugiat! Quos ipsa omnis accusamus sequi laboriosam iusto
+      quae minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+      et labore totam recusandae quidem, non temporibus commodi sapiente. Ut,
+      eaque doloribus! Libero atque modi quo quibusdam suscipit ipsa id nostrum.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed accusantium
+      quisquam ullam reiciendis veniam laboriosam dicta delectus? Neque tempore
+      illo, quae architecto eum illum ipsam rerum dolorum, laudantium, corporis
+      sequi.
+    </p>
+  </div>
+</div>
 {% endblock %}
