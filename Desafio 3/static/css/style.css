@@ -88,6 +88,7 @@ img{
   width: 75%;
   height: 40%;
   background-color: white;
+  color: black;
 }
 
 .cover h1{
@@ -137,6 +138,5 @@ img{
 .play-button:hover{
   color: green;
   background-color: grey;
-  border-radius: 100%;
   transition: 800ms;
 }
